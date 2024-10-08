@@ -20,3 +20,6 @@ echo Enabling Firewall
 ufw allow ssh
 echo y | ufw enable
 
+
+echo Adding IP to pre-login banner.
+echo IP: \\4 >>  /etc/issue
