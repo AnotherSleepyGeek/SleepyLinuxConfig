@@ -7,9 +7,14 @@ fi
 
 
 apt update
-apt upgrade -y
+#install auto-apt-proxy asap to make sure the rest goes through the proxy
+apt install -y auto-apt-proxy
+echo APT Proxy:
+auto-apt-proxy
 
-apt install -y iputils-ping dnsutils clamav clamav-daemon nano ufw auto-apt-proxy
+
+apt upgrade -y
+apt install -y iputils-ping dnsutils clamav clamav-daemon nano ufw 
 
 Echo Updating Antivirus
 systemctl stop clamav-freshclam
