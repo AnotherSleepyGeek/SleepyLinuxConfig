@@ -9,7 +9,7 @@ fi
 apt update
 apt upgrade -y
 
-apt install -y iputils-ping dnsutils clamav clamav-daemon nano ufw
+apt install -y iputils-ping dnsutils clamav clamav-daemon nano ufw auto-apt-proxy
 
 Echo Updating Antivirus
 systemctl stop clamav-freshclam
